@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:columnCount="10"
+    android:rowCount="10">
+
+    <AnalogClock
+        android:id="@+id/reloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="10"
+        android:layout_rowSpan="10"
+        android:layout_gravity="center_vertical"
+        android:background="@color/red"
+        />
+    <CheckBox
+        android:id="@+id/checkPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="3"
+        android:text="ChekBox de prueba" />
+    <Button
+        android:id="@+id/botonPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:layout_rowSpan="5"
+        android:text="Boton de prueba" />
+    <TextView
+        android:id="@+id/etiquetaPrueba"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="200px"
+        android:layout_columnSpan="4"
+        android:layout_rowSpan="10"
+        android:text="Etiqueta de prueba." />
+</GridLayout>

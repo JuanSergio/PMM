@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dip"
+    android:background="@drawable/degradado"
+    tools:context="juanser.mati.solobici.MainActivity">
+
+    <TextView
+        android:text="SoloBici didáctico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dip"
+        android:id="@+id/texto" />
+
+    <Button
+        android:text="Jugar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton01" />
+
+    <Button
+        android:text="configurar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton02" />
+
+    <Button
+        android:text="Acerca de"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton03" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Boton04" />
+
+
+</LinearLayout>

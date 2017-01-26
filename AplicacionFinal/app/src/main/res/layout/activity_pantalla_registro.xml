@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pantalla_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="juansergio.aplicacionfinal.PantallaRegistro"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="Registro"
+        android:textSize="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Registro" />
+
+    <TextView
+        android:text="Nombre"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textSize="23dp"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TituloNombre" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RegistroNombre" />
+
+    <TextView
+        android:text="Password"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textSize="23dp"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TituloPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/RegistroPassword" />
+<LinearLayout
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:text="Volver"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BotonVolver" />
+
+    <Button
+        android:layout_marginLeft="160px"
+        android:text="Registrarse"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BotonRegistrar" />
+</LinearLayout>
+
+</LinearLayout>
