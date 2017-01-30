@@ -11,18 +11,21 @@ import android.database.sqlite.SQLiteDatabase.*;
 public class UsuarioSQLiteHelper extends SQLiteOpenHelper {
 
     String cadSQL = "CREATE TABLE Usuarios (nombre TEXT, password TEXT)";
+    String cadSQL2 = "CREATE TABLE Comics (Titulo TEXT, Genero TEXT, Precio DOUBLE)";
 
-    public UsuarioSQLiteHelper(Context contexto, String nombre, CursorFactory almacen,int version){
+    //Campos obligados
+    public UsuarioSQLiteHelper(Context contexto, String nombre, SQLiteDatabase.CursorFactory almacen,int version){
         super (contexto, nombre, almacen, version);
     }
 
     public void onCreate(SQLiteDatabase bd){
         //Se ejecuta la basa de datos
         bd.execSQL(cadSQL);
+        bd.execSQL(cadSQL2);
 
     }
     public void onUpgrade(SQLiteDatabase bd, int versionAnterior, int versionNueva){
-        bd.execSQL("DROP TABLE IF EXISTS Usuarios");
+        //bd.execSQL("DROP TABLE IF EXISTS Usuarios");
         bd.execSQL(cadSQL);
 
     }

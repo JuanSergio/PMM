@@ -21,7 +21,8 @@
         <activity android:name=".PantallaMarvel" />
         <activity android:name=".PantallaManga" />
         <activity android:name=".PantallaEuropeo" />
-        <activity android:name=".PantallaClasicos"></activity>
+        <activity android:name=".PantallaClasicos" />
+        <activity android:name=".Comic"></activity>
     </application>
 
 </manifest>
