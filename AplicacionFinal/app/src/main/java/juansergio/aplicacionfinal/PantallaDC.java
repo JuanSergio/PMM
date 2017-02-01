@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Gallery;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class PantallaDC extends AppCompatActivity {
         //Que la bd se pueda modificar
         SQLiteDatabase bd = usu.getWritableDatabase();
 
-        bd.execSQL("INSERT INTO Comics (Titulo, Genero, Precio) VALUES ('Superman', 'Acción', '14.95')");
+        //bd.execSQL("INSERT INTO Comics (Titulo, Genero, Precio) VALUES ('Superman', 'Acción', '14.95')");
 
         //Mensaje como que registro completado
         Toast.makeText(getApplicationContext(),"Hecho", Toast.LENGTH_LONG).show();
@@ -82,7 +83,7 @@ public class PantallaDC extends AppCompatActivity {
         bd.close();
 
 
-        BotonVolver.setOnClickListener(new View.OnClickListener() {
+        /*BotonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //crear el enlace que al pulsar el boton vaya a registro
@@ -91,6 +92,7 @@ public class PantallaDC extends AppCompatActivity {
 
             }
         });
+        */
     }
     public class AdaptadorSpinner extends ArrayAdapter{
 

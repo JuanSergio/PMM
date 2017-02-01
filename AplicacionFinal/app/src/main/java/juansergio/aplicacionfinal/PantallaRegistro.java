@@ -21,7 +21,7 @@ public class PantallaRegistro extends AppCompatActivity {
         final EditText RegistroNombre = (EditText) findViewById(R.id.RegistroNombre);
         final EditText RegistroPassword = (EditText) findViewById(R.id.RegistroPassword);
 
-        usuarioSQLiteHelper = new UsuarioSQLiteHelper(this, "BDUsuarios", null, 1);
+        usuarioSQLiteHelper = new UsuarioSQLiteHelper(this, "BDUsuario", null, 1);
         BotonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
