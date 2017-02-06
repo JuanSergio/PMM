@@ -1,40 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_pantalla_dc"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="juansergio.aplicacionfinal.PantallaDC">
-
-    <Button
-        android:text="Volver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
-        android:id="@+id/BotonVolver"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/SpinnerDC"
-        android:layout_above="@+id/BotonVolver"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="147dp" />
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/europeo"
-        android:id="@+id/imageView3"
+        android:id="@+id/imageEuro"
+        android:layout_marginBottom="171dp"
+        android:layout_above="@+id/botonVolver"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageEuro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:text="Vengadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vengadores"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="X-Men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xmen"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Otros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/otro"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <CheckBox
+        android:text="Precio de 6 a 20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio2"
+        android:layout_below="@+id/precio1"
+        android:layout_alignStart="@+id/precio1" />
+
+    <CheckBox
+        android:text="Precio mayor de 20€"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precio2"
+        android:layout_alignEnd="@+id/precio2"
+        android:id="@+id/precio3"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_alignStart="@+id/precio2" />
+
+    <CheckBox
+        android:text="Precio hasta 5€"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:id="@+id/precio1"
+        android:layout_below="@+id/imageDC"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="VOLVER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginStart="31dp"
         android:layout_marginBottom="49dp"
-        android:layout_above="@+id/SpinnerDC"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/botonVolver" />
+
+    <Button
+        android:text="ACEPTAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/botonVolver"
+        android:layout_alignStart="@+id/precio3"
+        android:id="@+id/botonAceptar" />
+
 
 </RelativeLayout>
