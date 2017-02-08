@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:layout_marginTop="150dp"
+
             android:id="@+id/texto1" />
 
         <TextView
@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:layout_marginTop="40dp"
             android:id="@+id/texto2" />
 
         <TextView
@@ -36,7 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:layout_marginTop="40dp"
             android:id="@+id/texto3" />
     </LinearLayout>
 </LinearLayout>

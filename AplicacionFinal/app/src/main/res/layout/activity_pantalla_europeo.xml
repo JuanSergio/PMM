@@ -4,73 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/europeo"
-        android:id="@+id/imageEuro"
-        android:layout_marginBottom="171dp"
-        android:layout_above="@+id/botonVolver"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
 
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageEuro"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="27dp"
-        android:id="@+id/radioGroup">
-
-        <RadioButton
-            android:text="Vengadores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/vengadores"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:text="X-Men"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/xmen"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:text="Otros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/otro"
-            android:layout_weight="1" />
-    </RadioGroup>
-
-    <CheckBox
-        android:text="Precio de 6 a 20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/precio2"
-        android:layout_below="@+id/precio1"
-        android:layout_alignStart="@+id/precio1" />
-
-    <CheckBox
-        android:text="Precio mayor de 20€"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/precio2"
-        android:layout_alignEnd="@+id/precio2"
-        android:id="@+id/precio3"
-        android:layout_alignBottom="@+id/radioGroup"
-        android:layout_alignStart="@+id/precio2" />
-
-    <CheckBox
-        android:text="Precio hasta 5€"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="22dp"
-        android:id="@+id/precio1"
-        android:layout_below="@+id/imageDC"
-        android:layout_alignParentEnd="true" />
 
     <Button
         android:text="VOLVER"
@@ -90,5 +25,71 @@
         android:layout_alignStart="@+id/precio3"
         android:id="@+id/botonAceptar" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/europeo"
+        android:id="@+id/imageEur"
+        android:layout_marginBottom="159dp"
+        android:layout_above="@+id/botonVolver"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginBottom="71dp"
+        android:layout_above="@+id/botonVolver"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp">
+
+        <RadioButton
+            android:text="Blacksad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/black"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Beowulf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beowulf"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Los Surcos del azar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surcos"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <CheckBox
+        android:text="Precio hasta 5€"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_alignTop="@+id/radioGroup" />
+
+    <CheckBox
+        android:text="Precio mayor de 20€"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precio2"
+        android:layout_alignEnd="@+id/precio2"
+        android:id="@+id/precio3"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_alignStart="@+id/precio2" />
+
+    <CheckBox
+        android:text="Precio de 6 a 20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio2"
+        android:layout_below="@+id/precio1"
+        android:layout_alignStart="@+id/precio1" />
 
 </RelativeLayout>
