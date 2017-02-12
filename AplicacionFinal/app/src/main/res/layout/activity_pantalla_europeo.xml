@@ -1,95 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pantalla_europeo"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/europeo"
+        android:layout_marginTop="11dp"
+        android:id="@+id/imageEuropeo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="250px" />
+
+    <CheckBox
+        android:text="Para regalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:id="@+id/regalo"
+        android:layout_below="@+id/imageEuropeo"
+        android:layout_marginTop="370px"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="Subscripción"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subscripcion"
+        android:layout_below="@+id/regalo"
+        android:layout_alignStart="@+id/regalo" />
+
+    <CheckBox
+        android:text="Figura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/figura"
+        android:layout_below="@+id/subscripcion"
+        android:layout_alignStart="@+id/subscripcion" />
 
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:id="@+id/radioGroup"
+        android:layout_alignTop="@+id/regalo"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="Efectivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/efectivo"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="PayPal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paypal"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarjeta"
+            android:layout_weight="1" />
+    </RadioGroup>
 
     <Button
         android:text="VOLVER"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/BotonVolver"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/radioGroup"
-        android:layout_marginStart="31dp"
-        android:layout_marginBottom="49dp"
-        android:id="@+id/botonVolver" />
-
+        android:layout_marginBottom="20dp" />
     <Button
-        android:text="ACEPTAR"
+        android:text="COMPRAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/botonVolver"
-        android:layout_alignStart="@+id/precio3"
-        android:id="@+id/botonAceptar" />
+        android:id="@+id/botonCompra"
+        android:layout_alignBaseline="@+id/BotonVolver"
+        android:layout_alignBottom="@+id/BotonVolver"
+        android:layout_alignStart="@+id/figura" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/europeo"
-        android:id="@+id/imageEur"
-        android:layout_marginBottom="159dp"
-        android:layout_above="@+id/botonVolver"
-        android:layout_alignParentStart="true" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup"
-        android:layout_marginBottom="71dp"
-        android:layout_above="@+id/botonVolver"
+        android:id="@+id/spinnerEuropeo"
+        android:layout_below="@+id/imageEuropeo"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp">
-
-        <RadioButton
-            android:text="Blacksad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/black"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:text="Beowulf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/beowulf"
-            android:layout_weight="1" />
-
-        <RadioButton
-            android:text="Los Surcos del azar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/surcos"
-            android:layout_weight="1" />
-    </RadioGroup>
-
-    <CheckBox
-        android:text="Precio hasta 5€"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/precio1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="15dp"
-        android:layout_alignTop="@+id/radioGroup" />
-
-    <CheckBox
-        android:text="Precio mayor de 20€"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/precio2"
-        android:layout_alignEnd="@+id/precio2"
-        android:id="@+id/precio3"
-        android:layout_alignBottom="@+id/radioGroup"
-        android:layout_alignStart="@+id/precio2" />
-
-    <CheckBox
-        android:text="Precio de 6 a 20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/precio2"
-        android:layout_below="@+id/precio1"
-        android:layout_alignStart="@+id/precio1" />
+        android:layout_marginTop="12dp" />
 
 </RelativeLayout>

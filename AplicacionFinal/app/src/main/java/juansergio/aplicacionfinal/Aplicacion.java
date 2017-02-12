@@ -19,6 +19,7 @@ public class Aplicacion extends AppCompatActivity {
         final Button BotonManga = (Button) findViewById(R.id.BotonManga);
         final Button BotonEuropeo = (Button) findViewById(R.id.BotonEuropeo);
         final Button BotonClasicos = (Button) findViewById(R.id.BotonClasicos);
+        final Button BotonWeb = (Button) findViewById(R.id.BotonWeb);
 
         BotonDC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,15 @@ public class Aplicacion extends AppCompatActivity {
                 //crear el enlace que al pulsar el boton vaya a registro
                 Intent irEuropeo = new Intent(Aplicacion.this, PantallaEuropeo.class);
                 startActivity(irEuropeo);
+
+            }
+        });
+        BotonWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //crear el enlace que al pulsar el boton vaya a registro
+                Intent irWeb = new Intent(Aplicacion.this, Web.class);
+                startActivity(irWeb);
 
             }
         });
